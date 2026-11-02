@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{color:#f2dfe8;text-transform:none;letter-spacing:.02em;font-size:20px;font-weight:750;background:linear-gradient(90deg,#ff5c8a,#4dd0e1);-webkit-background-clip:text;background-clip:text;color:transparent}
 .card{background:transparent;border:0;border-top:1px solid #2a1a24;border-radius:0;padding:16px 0 0}
 body::before{content:'';display:block;height:5px;background:#ff5c8a;position:sticky;top:0;z-index:9}
-background-image:repeating-linear-gradient(0deg, transparent 0 39px, #2a1a24 39px 40px);
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:repeating-linear-gradient(0deg, transparent 0 39px, #2a1a24 39px 40px)}
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #2a1a24 39p
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>智能体输出可信度这件事，值得有人把它讲明白。</p>
+  <p>智能体输出可信度这件事，值得有人把它讲明白。 当前以硕士阶段研究角色的方式推进项目。</p>
   <ul class="traits">
     <li>先讲为什么不用更简单的方案。</li>
     <li>每个决策都标出放弃了什么。</li>
@@ -89,12 +89,20 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #2a1a24 39p
   <div class="grid two">
     <article class="card">
       <h3>智能体输出可信度里常见的误判模式</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>智能体输出可信度的判定依据与复核方式</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>智能体输出可信度里容易误判的情形与反例</h3>
+      <span class="status">持续跟进</span>
+    </article>
+    <article class="card">
+      <h3>在推进的问题</h3>
+      <p>（智能体输出可信度场景）如何避免把智能体输出可信度的噪声当成信号？用调用轨迹与终止给出误判模式的判别特征。</p>
+      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -102,6 +110,9 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #2a1a24 39p
 <section id="work">
   <h2>开源</h2>
   <ul class="repos">
+    <li><div class="name"><a href="https://github.com/allanribei/agent_loop_counterexample_search_054faccf" rel="noopener">agent_loop_counterexample_search_054faccf</a></div>
+      <div class="desc">（智能体输出可信度场景）如何避免把智能体输出可信度的噪声当成信号？用调用轨迹与终止给出误判模式的判别特征。</div>
+    </li>
     <li><div class="name"><a href="https://github.com/allanribei/trustscore" rel="noopener">trustscore</a></div>
       <div class="desc">按证据类型与强度给结论评分，标出哪些结论缺少支撑</div>
     </li>
